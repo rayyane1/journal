@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+
+nav{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-weight: bold;
+    display: flex;
+    gap: 20px;
+}
+
+li{
+    display: flex;
+    gap: 20px;
+}
+.compte{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.avatar{
+   width: 80px;
+   height: 80px;
+   border-radius: 100%;
+   border: 2px solid black;
+   object-fit: cover;
+}
+
+.bouton{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   text-decoration: none;
+   padding: 8px 16px;
+   /* width: fit-content; */
+   height: fit-content;
+   font-weight: 500;
+   transition: all .3s ease-in-out;
+}
+
+.bouton.primaire{
+   background: #8005F2;
+   color: white;
+}
+
+.lien{
+   color: black;
+   text-decoration: none;
+   font-weight: 500;
+   transition: all .3s ease-in-out;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
