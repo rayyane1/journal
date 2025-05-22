@@ -87,7 +87,19 @@ function getData() {
       let equipe = document.getElementById('equipe')
       console.log(equipe);
 
-      
+        data.journal.auteurs.forEach(auteur => {
+        let prenom = document.createElement('p')
+        prenom.textContent = journal.auteurs.prenom
+        equipe.appendChild(prenom)
+
+        let typeExperience = document.createElement('p')
+        typeExperience.textContent = journal.auteurs.typeExperience
+        equipe.appendChild(typeExperience)
+
+        let presentation = document.createElement('p')
+        presentation.textContent = journal.auteurs.presentation
+        equipe.appendChild(presentation)
+        });
 
        /// FIN DU CODE
      })
