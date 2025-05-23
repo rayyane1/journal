@@ -62,3 +62,22 @@ footer{
     color: white;
     background-color: black;
 }
+
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#artRecent{
+    display: flex;
+}
+
+#otherArticle{
+    display: flex;
+}
+
+#equipe{
+    display: flex;
+}

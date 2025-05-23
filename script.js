@@ -13,6 +13,8 @@ function getData() {
        let journal = data.journal
 
        /// ON ECRIT LE CODE ICI ! 
+
+
       
       let intro = document.getElementById('intro')
 
@@ -85,21 +87,24 @@ function getData() {
 
 
       let equipe = document.getElementById('equipe')
-      console.log(equipe);
+     
 
         data.journal.auteurs.forEach(auteur => {
+
         let prenom = document.createElement('p')
-        prenom.textContent = journal.auteurs.prenom
+        prenom.textContent = auteur.prenom
         equipe.appendChild(prenom)
 
         let typeExperience = document.createElement('p')
-        typeExperience.textContent = journal.auteurs.typeExperience
+        typeExperience.textContent = auteur.typeExperience
         equipe.appendChild(typeExperience)
 
         let presentation = document.createElement('p')
-        presentation.textContent = journal.auteurs.presentation
+        presentation.textContent = auteur.presentation
         equipe.appendChild(presentation)
         });
+
+
 
        /// FIN DU CODE
      })
