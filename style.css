@@ -102,5 +102,9 @@ footer{
 }
 .carteArticle{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.carteArticle.textDiv{
+    display: flex;
 }

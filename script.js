@@ -66,28 +66,36 @@ function getData() {
       let otherArticle = document.getElementById('otherArticle')
       console.log(otherArticle);
 
-      let carteArticle = document.createElement('div')
-      carteArticle.className = 'carteArticle'
-
-
+   
       data.journal.articles.forEach(article => {
 
-      let titleArticle = document.createElement('h2')
-      titleArticle.textContent = article.titre
-      carteArticle.appendChild(titleArticle)
+           let carteArticle = document.createElement('div')
+      carteArticle.className = 'carteArticle'
 
-      let dateArticle = document.createElement('h3')
-      dateArticle.textContent = article.date
-      carteArticle.appendChild(dateArticle)
-
-      let themeArticle = document.createElement('p')
-      themeArticle.textContent = article.theme
-      carteArticle.appendChild(themeArticle)
 
       let imageArticle = document.createElement('img')
       imageArticle.src = article.image
       imageArticle.alt = article.titre
       carteArticle.appendChild(imageArticle)
+
+
+      let textDiv = document.createElement('div')
+      textDiv.className = 'textDiv'
+
+      let titleArticle = document.createElement('h2')
+      titleArticle.textContent = article.titre
+      textDiv.appendChild(titleArticle)
+
+      let dateArticle = document.createElement('h3')
+      dateArticle.textContent = article.date
+      textDiv.appendChild(dateArticle)
+
+      let themeArticle = document.createElement('p')
+      themeArticle.textContent = article.theme
+      textDiv.appendChild(themeArticle)
+
+      carteArticle.appendChild(textDiv)
+
 
       otherArticle.appendChild(carteArticle)
       });
