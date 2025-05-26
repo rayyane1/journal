@@ -4,42 +4,43 @@
     "phraseAccroche": "L'esprit guerrier du MMA tchétchène",
     "texteAppelAction": "Abonnez-vous pour suivre l'ascension des combattants du Caucase",
     "articlePrincipal": {
+      "image": "image.png",
       "titre": "Khamzat Chimaev : l'ascension fulgurante du 'Borz'",
-      "description": "Né en Tchétchénie, Khamzat Chimaev est devenu une star mondiale du MMA, invaincu en 14 combats et classé 3e à l'UFC.",
       "date": "20 Mai 2025",
       "theme": "Innovations",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Khamzat_Chimaev_2022.jpg/800px-Khamzat_Chimaev_2022.jpg"
+      "description": "Né en Tchétchénie, Khamzat Chimaev est devenu une star mondiale du MMA, invaincu en 14 combats et classé 3e à l'UFC."
+
     },
     "articles": [
       {
         "titre": "Baki, le prodige tchétchène du MMA français",
         "date": "8 Mai 2024",
         "theme": "Recherche",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Baysangur_Chamsoudinov_2024.jpg/800px-Baysangur_Chamsoudinov_2024.jpg"
+        "image": "image.png"
       },
       {
         "titre": "La jeunesse du Daghestan : une pépinière de champions en devenir",
         "date": "25 Décembre 2024",
         "theme": "Débats",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Daghestan_MMA_Youth.jpg/800px-Daghestan_MMA_Youth.jpg"
+        "image": "image.png"
       },
       {
         "titre": "Le Fighting Club Akhmat : pépinière de champions",
         "date": "10 Novembre 2024",
         "theme": "Partenariats",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Fighting_Club_Akhmat.jpg/800px-Fighting_Club_Akhmat.jpg"
+        "image": "image.png"
       },
       {
         "titre": "La diaspora tchétchène : un vivier de talents en France",
         "date": "20 Novembre 2024",
         "theme": "Applications",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nassourdine_Imavov_2022.jpg/800px-Nassourdine_Imavov_2022.jpg"
+        "image": "image.png"
       },
       {
         "titre": "Les jeunes Tchétchènes et le MMA : une voie vers l'émancipation",
         "date": "5 Novembre 2024",
         "theme": "Éthique",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Jeunes_Tchetchenes_MMA.jpg/800px-Jeunes_Tchetchenes_MMA.jpg"
+        "image": "image.png"
       }
     ],
     "themes": [
@@ -72,17 +73,20 @@
       {
         "prenom": "Claire",
         "typeExperience": "Journaliste sportive",
-        "presentation": "Je couvre les sports de combat avec un intérêt particulier pour les athlètes émergents du Caucase."
+        "presentation": "Je couvre les sports de combat avec un intérêt particulier pour les athlètes émergents du Caucase.",
+        "image": "profilpic.jpg"
       },
       {
         "prenom": "Thomas",
         "typeExperience": "Analyste en géopolitique du sport",
-        "presentation": "Je m'intéresse aux interactions entre sport, culture et politique, notamment dans les régions du Caucase."
-      },
+        "presentation": "Je m'intéresse aux interactions entre sport, culture et politique, notamment dans les régions du Caucase.",
+        "image": "profilpic.jpg"
+            },
       {
         "prenom": "Elena",
         "typeExperience": "Sociologue du sport",
-        "presentation": "Je travaille sur les dynamiques sociales et identitaires liées à la pratique du MMA chez les jeunes diasporas."
+        "presentation": "Je travaille sur les dynamiques sociales et identitaires liées à la pratique du MMA chez les jeunes diasporas.",
+        "image": "profilpic.jpg"
       }
     ]
   }

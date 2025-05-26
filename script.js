@@ -37,6 +37,12 @@ function getData() {
       let artRecent = document.getElementById('artRecent')
       console.log(artRecent);
 
+
+      let imageArticle = document.createElement('img')
+      imageArticle.src = journal.articlePrincipal.image
+      imageArticle.alt = journal.articlePrincipal.titre
+      artRecent.appendChild(imageArticle)
+
       let titleArticle = document.createElement('h2')
       titleArticle.textContent = journal.articlePrincipal.titre
       artRecent.appendChild(titleArticle)
@@ -45,43 +51,45 @@ function getData() {
       dateArticle.textContent = journal.articlePrincipal.date
       artRecent.appendChild(dateArticle)
 
-      let descriptionArticle = document.createElement('p')
-      descriptionArticle.textContent = journal.articlePrincipal.description
-      artRecent.appendChild(descriptionArticle)
-
       let themeArticle = document.createElement('p')
       themeArticle.textContent = journal.articlePrincipal.theme
       artRecent.appendChild(themeArticle)
 
-      let imageArticle = document.createElement('img')
-      imageArticle.src = journal.articlePrincipal.image
-      imageArticle.alt = journal.articlePrincipal.titre
-      artRecent.appendChild(imageArticle)
+      let descriptionArticle = document.createElement('p')
+      descriptionArticle.textContent = journal.articlePrincipal.description
+      artRecent.appendChild(descriptionArticle)
+
+
 
       
 
       let otherArticle = document.getElementById('otherArticle')
       console.log(otherArticle);
 
+      let carteArticle = document.createElement('div')
+      carteArticle.className = 'carteArticle'
+
 
       data.journal.articles.forEach(article => {
 
       let titleArticle = document.createElement('h2')
       titleArticle.textContent = article.titre
-      otherArticle.appendChild(titleArticle)
+      carteArticle.appendChild(titleArticle)
 
       let dateArticle = document.createElement('h3')
       dateArticle.textContent = article.date
-      otherArticle.appendChild(dateArticle)
+      carteArticle.appendChild(dateArticle)
 
       let themeArticle = document.createElement('p')
       themeArticle.textContent = article.theme
-      otherArticle.appendChild(themeArticle)
+      carteArticle.appendChild(themeArticle)
 
       let imageArticle = document.createElement('img')
       imageArticle.src = article.image
       imageArticle.alt = article.titre
-      otherArticle.appendChild(imageArticle)
+      carteArticle.appendChild(imageArticle)
+
+      otherArticle.appendChild(carteArticle)
       });
 
 
@@ -91,17 +99,26 @@ function getData() {
 
         data.journal.auteurs.forEach(auteur => {
 
+        let carteAuteur =document.createElement('div')
+        carteAuteur.className = 'carteAuteur'
+
+        let image = document.createElement('img')
+        image.src = auteur.image
+        carteAuteur.appendChild(image)   
+
         let prenom = document.createElement('p')
         prenom.textContent = auteur.prenom
-        equipe.appendChild(prenom)
+        carteAuteur.appendChild(prenom)
 
         let typeExperience = document.createElement('p')
         typeExperience.textContent = auteur.typeExperience
-        equipe.appendChild(typeExperience)
+        carteAuteur.appendChild(typeExperience)
 
         let presentation = document.createElement('p')
         presentation.textContent = auteur.presentation
-        equipe.appendChild(presentation)
+        carteAuteur.appendChild(presentation)
+
+       equipe.appendChild(carteAuteur)
         });
 
 
