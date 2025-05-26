@@ -13,7 +13,33 @@ function getData() {
        let journal = data.journal
 
        /// ON ECRIT LE CODE ICI ! 
+      let nav = document.querySelector('nav')
 
+      let navItems = `<div class="logo">
+      <img src="logo.svg" alt="">
+      <p>${journal.nomJournal}</p>
+      </div>
+        <ul id="menu"></ul>
+
+      <div class="compte">
+         <a class="bouton primaire" href="#">s'abonner</a>
+         <img class="avatar" src="avatar.jpg" alt="">
+         </div>
+      `;
+
+      nav.innerHTML = navItems;
+
+      journal.themes.forEach(theme => {
+            let menu = document.getElementById('menu')
+            let listTheme  = document.createElement('li')
+            listTheme.textContent = theme.nom 
+            menu.appendChild(listTheme )
+            let lienTheme  = document.createElement('a')
+            lienTheme.href = "#"
+            menu.appendChild(lienTheme)
+      });
+
+     
 
       
       let intro = document.getElementById('intro')
