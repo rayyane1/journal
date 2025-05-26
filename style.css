@@ -103,8 +103,5 @@ footer{
 .carteArticle{
     display: flex;
     flex-direction: row;
-}
-
-.carteArticle.textDiv{
-    display: flex;
+    gap: 20px;
 }

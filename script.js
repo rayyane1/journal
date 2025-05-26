@@ -69,7 +69,7 @@ function getData() {
    
       data.journal.articles.forEach(article => {
 
-           let carteArticle = document.createElement('div')
+      let carteArticle = document.createElement('div')
       carteArticle.className = 'carteArticle'
 
 
@@ -93,6 +93,10 @@ function getData() {
       let themeArticle = document.createElement('p')
       themeArticle.textContent = article.theme
       textDiv.appendChild(themeArticle)
+
+      let button = document.createElement('button')
+      button.textContent = article.button
+      textDiv.appendChild(button)
 
       carteArticle.appendChild(textDiv)
 

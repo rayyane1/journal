@@ -16,31 +16,36 @@
         "titre": "Baki, le prodige tchétchène du MMA français",
         "date": "8 Mai 2024",
         "theme": "Recherche",
-        "image": "image.png"
+        "image": "image.png",
+        "button": "plus d'info"
       },
       {
         "titre": "La jeunesse du Daghestan : une pépinière de champions en devenir",
         "date": "25 Décembre 2024",
         "theme": "Débats",
-        "image": "image.png"
+        "image": "image.png",
+        "button": "plus d'info"
       },
       {
         "titre": "Le Fighting Club Akhmat : pépinière de champions",
         "date": "10 Novembre 2024",
         "theme": "Partenariats",
-        "image": "image.png"
+        "image": "image.png",
+        "button": "plus d'info"
       },
       {
         "titre": "La diaspora tchétchène : un vivier de talents en France",
         "date": "20 Novembre 2024",
         "theme": "Applications",
-        "image": "image.png"
+        "image": "image.png",
+        "button": "plus d'info"
       },
       {
         "titre": "Les jeunes Tchétchènes et le MMA : une voie vers l'émancipation",
         "date": "5 Novembre 2024",
         "theme": "Éthique",
-        "image": "image.png"
+        "image": "image.png",
+        "button": "plus d'info"
       }
     ],
     "themes": [
